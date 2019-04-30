@@ -2101,7 +2101,7 @@ body.is-menu-visible #menu {
     font-size: 2.25em;
     margin-bottom: 0.8em;
     padding-bottom: 0.4em; }
-  #banner p {
+  #banner p, #banner ul {
     -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
     -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
     -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;

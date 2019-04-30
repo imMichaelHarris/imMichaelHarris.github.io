@@ -51,8 +51,8 @@
 			margin-bottom: _size(element-margin) * 0.4;
 			padding-bottom: _size(element-margin) * 0.2;
 		}
-
-		p {
+		
+		p ,ul {
 			@include vendor('transition', (
 				'opacity 0.5s ease',
 				'transform 0.5s ease',
