@@ -2334,7 +2334,11 @@ body.is-menu-visible #menu {
       .wrapper.spotlight .image img {
         border-radius: 100%;
         width: 100%;
-        height: 300px; }
+        display: none; }
+        @media (min-width: 35em) {
+          .wrapper.spotlight .image img {
+            display: block;
+            height: 300px; } }
     .wrapper.spotlight .content {
       width: 100%;
       -ms-flex: 2; }
