@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/*******************Variables *******************************/
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/***********************   Mixins   ****************************/
+.border {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+/***********************************************************************/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background: linear-gradient(to right, #556270, #4ECDC4);
+}
+.main-container {
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  background: #eee;
+  /************************   MAIN *****************************************/
+}
+@media (min-width: 1000px) {
+  .main-container {
+    width: 50vw;
+  }
+}
+@media (max-width: 500px) {
+  .main-container {
+    width: 100vw;
+  }
+}
+.main-container h2 {
+  font-size: 2.25rem;
+  margin: 1.25rem 0;
+}
+.main-container nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  padding: 3rem;
+}
+@media (min-width: 1000px) {
+  .main-container nav {
+    padding: 0;
+    font-size: 1.75rem;
+    justify-content: flex-end;
+  }
+  .main-container nav a {
+    margin: 10px;
+  }
+}
+.main-container nav a {
+  text-decoration: none;
+  color: #0e0e2e;
+}
+.main-container .intro {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  font-size: 2.25rem;
+  justify-content: space-between;
+  background: linear-gradient(to top, #004e92, #000428);
+  color: #eee;
+}
+.main-container .intro h1 {
+  font-size: 5rem;
+}
+.main-container .intro h3 {
+  font-size: 3rem;
+}
+.main-container .intro img {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+@media (min-width: 700px) {
+  .main-container .intro img {
+    max-width: 6em;
+  }
+}
+.main-container .intro * {
+  margin-top: 1.25rem;
+}
+.main-container .intro h5 {
+  font-size: 1.75rem;
+}
+.main-container .intro .teamup {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #eee;
+}
+.main-container main {
+  padding: 3rem;
+  font-size: 1.75rem;
+  justify-content: space-between;
+  min-height: 50vh;
+  line-height: 1.5em;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.main-container main ul {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+.main-container .history {
+  font-size: 1.75rem;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.main-container .history li {
+  margin: 20px 0;
+}
+.main-container .history li span {
+  font-size: 1.25rem;
+  display: block;
+}
+@media (max-width: 5em) {
+  .main-container .history li span {
+    font-size: 0.6rem;
+  }
+}
+.main-container footer {
+  text-align: center;
+  background: linear-gradient(to bottom, #004e92, #000428);
+  color: #eee;
+  padding: 1rem;
+}
